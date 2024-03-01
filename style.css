@@ -1,0 +1,176 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: header 2s ease-in-out;
+    font-family: cursive;
+    font-size: 20px;
+    color: aqua;
+}
+
+@keyframes header {
+    0% {
+
+        transform: translatey(-50%);
+    }
+}
+
+
+
+nav {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav li {
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+nav li a:hover {
+    color: #ff7200;
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+
+}
+
+.content {
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: content 2s ease-in-out;
+}
+
+@keyframes content {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.content h1 {
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 6px;
+    font-family: italic;
+    color: cadetblue;
+}
+
+.content h3 {
+    font-size: 25px;
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color: yellow;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    padding: 15px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: red;
+}
+
+.image {
+    width: 50%;
+    margin-top: 24%;
+    z-index: -1;
+
+
+
+}
+
+img {
+    width: 55rem;
+    justify-content: center;
+    margin: 0 auto;
+    animation: car 5s ease-in-out;
+}
+
+@keyframes car {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-220%)
+    }
+}
+
+@media screen and (max-width:2000px) {
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:876px) {
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content h1 h3 p {
+        margin-bottom: 1%;
+
+    }
+
+    .image {
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
